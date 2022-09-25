@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+<!-- This is the title of the tab -->
+{% block title %} Start {% endblock %}
+
+{% block content %}
+<h1>{{survey.title}}</h1>
+<p>{{survey.instructions}}</p>
+
+<form action="/start_survey" method="POST">
+  <button>Start Survey</button>
+
+</form>
+
+
+{% endblock %}
